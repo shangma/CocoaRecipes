@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		540EFE9B179F4AD2008F5D06 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540EFE9A179F4AD2008F5D06 /* Cocoa.framework */; };
+		540EFEA5179F4AD2008F5D06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEA3179F4AD2008F5D06 /* InfoPlist.strings */; };
+		540EFEA7179F4AD2008F5D06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 540EFEA6179F4AD2008F5D06 /* main.m */; };
+		540EFEAB179F4AD3008F5D06 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEA9179F4AD3008F5D06 /* Credits.rtf */; };
+		540EFEAE179F4AD3008F5D06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540EFEAD179F4AD3008F5D06 /* AppDelegate.m */; };
+		540EFEB1179F4AD3008F5D06 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEAF179F4AD3008F5D06 /* MainMenu.xib */; };
+		540EFEBA179F4B83008F5D06 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540EFEB8179F4B83008F5D06 /* MasterViewController.m */; };
+		540EFEBB179F4B83008F5D06 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEB9179F4B83008F5D06 /* MasterViewController.xib */; };
+		540EFEC0179F5774008F5D06 /* ScaryBugData.m in Sources */ = {isa = PBXBuildFile; fileRef = 540EFEBF179F5774008F5D06 /* ScaryBugData.m */; };
+		540EFEC3179F589C008F5D06 /* ScaryBugDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 540EFEC2179F589C008F5D06 /* ScaryBugDoc.m */; };
+		540EFECD179F5A75008F5D06 /* centipede.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEC5179F5A75008F5D06 /* centipede.jpg */; };
+		540EFECE179F5A75008F5D06 /* centipedeThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEC6179F5A75008F5D06 /* centipedeThumb.jpg */; };
+		540EFECF179F5A75008F5D06 /* ladybug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEC7179F5A75008F5D06 /* ladybug.jpg */; };
+		540EFED0179F5A75008F5D06 /* ladybugThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEC8179F5A75008F5D06 /* ladybugThumb.jpg */; };
+		540EFED1179F5A75008F5D06 /* potatoBug.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEC9179F5A75008F5D06 /* potatoBug.jpg */; };
+		540EFED2179F5A75008F5D06 /* potatoBugThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 540EFECA179F5A75008F5D06 /* potatoBugThumb.jpg */; };
+		540EFED3179F5A75008F5D06 /* wolfSpider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 540EFECB179F5A75008F5D06 /* wolfSpider.jpg */; };
+		540EFED4179F5A75008F5D06 /* wolfSpiderThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 540EFECC179F5A75008F5D06 /* wolfSpiderThumb.jpg */; };
+		540EFED817A02D0E008F5D06 /* EDStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 540EFED717A02D0E008F5D06 /* EDStarRating.m */; };
+		540EFEDC17A02D2D008F5D06 /* NSImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 540EFEDB17A02D2D008F5D06 /* NSImage+Extras.m */; };
+		540EFEE117A02D50008F5D06 /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEDE17A02D50008F5D06 /* shockedface2_empty.png */; };
+		540EFEE217A02D50008F5D06 /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEDF17A02D50008F5D06 /* shockedface2_full.png */; };
+		540EFEE317A02D50008F5D06 /* shockedface2_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 540EFEE017A02D50008F5D06 /* shockedface2_half.png */; };
+		540EFEE517A07E4B008F5D06 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540EFEE417A07E4B008F5D06 /* Quartz.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		540EFE97179F4AD2008F5D06 /* ScaryBugsMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaryBugsMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		540EFE9A179F4AD2008F5D06 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		540EFE9D179F4AD2008F5D06 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		540EFE9E179F4AD2008F5D06 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		540EFE9F179F4AD2008F5D06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		540EFEA2179F4AD2008F5D06 /* ScaryBugsMac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScaryBugsMac-Info.plist"; sourceTree = "<group>"; };
+		540EFEA4179F4AD2008F5D06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		540EFEA6179F4AD2008F5D06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		540EFEA8179F4AD2008F5D06 /* ScaryBugsMac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScaryBugsMac-Prefix.pch"; sourceTree = "<group>"; };
+		540EFEAA179F4AD3008F5D06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		540EFEAC179F4AD3008F5D06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		540EFEAD179F4AD3008F5D06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		540EFEB0179F4AD3008F5D06 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		540EFEB7179F4B83008F5D06 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		540EFEB8179F4B83008F5D06 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		540EFEB9179F4B83008F5D06 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
+		540EFEBE179F5774008F5D06 /* ScaryBugData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaryBugData.h; sourceTree = "<group>"; };
+		540EFEBF179F5774008F5D06 /* ScaryBugData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaryBugData.m; sourceTree = "<group>"; };
+		540EFEC1179F589C008F5D06 /* ScaryBugDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaryBugDoc.h; sourceTree = "<group>"; };
+		540EFEC2179F589C008F5D06 /* ScaryBugDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaryBugDoc.m; sourceTree = "<group>"; };
+		540EFEC5179F5A75008F5D06 /* centipede.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = centipede.jpg; sourceTree = "<group>"; };
+		540EFEC6179F5A75008F5D06 /* centipedeThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = centipedeThumb.jpg; sourceTree = "<group>"; };
+		540EFEC7179F5A75008F5D06 /* ladybug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ladybug.jpg; sourceTree = "<group>"; };
+		540EFEC8179F5A75008F5D06 /* ladybugThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ladybugThumb.jpg; sourceTree = "<group>"; };
+		540EFEC9179F5A75008F5D06 /* potatoBug.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = potatoBug.jpg; sourceTree = "<group>"; };
+		540EFECA179F5A75008F5D06 /* potatoBugThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = potatoBugThumb.jpg; sourceTree = "<group>"; };
+		540EFECB179F5A75008F5D06 /* wolfSpider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpider.jpg; sourceTree = "<group>"; };
+		540EFECC179F5A75008F5D06 /* wolfSpiderThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpiderThumb.jpg; sourceTree = "<group>"; };
+		540EFED617A02D0E008F5D06 /* EDStarRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EDStarRating.h; sourceTree = "<group>"; };
+		540EFED717A02D0E008F5D06 /* EDStarRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EDStarRating.m; sourceTree = "<group>"; };
+		540EFEDA17A02D2D008F5D06 /* NSImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Extras.h"; sourceTree = "<group>"; };
+		540EFEDB17A02D2D008F5D06 /* NSImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Extras.m"; sourceTree = "<group>"; };
+		540EFEDE17A02D50008F5D06 /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
+		540EFEDF17A02D50008F5D06 /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_full.png; sourceTree = "<group>"; };
+		540EFEE017A02D50008F5D06 /* shockedface2_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_half.png; sourceTree = "<group>"; };
+		540EFEE417A07E4B008F5D06 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		540EFE94179F4AD2008F5D06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540EFEE517A07E4B008F5D06 /* Quartz.framework in Frameworks */,
+				540EFE9B179F4AD2008F5D06 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		540EFE8E179F4AD2008F5D06 = {
+			isa = PBXGroup;
+			children = (
+				540EFEA0179F4AD2008F5D06 /* ScaryBugsMac */,
+				540EFE99179F4AD2008F5D06 /* Frameworks */,
+				540EFE98179F4AD2008F5D06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		540EFE98179F4AD2008F5D06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				540EFE97179F4AD2008F5D06 /* ScaryBugsMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		540EFE99179F4AD2008F5D06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				540EFE9A179F4AD2008F5D06 /* Cocoa.framework */,
+				540EFE9C179F4AD2008F5D06 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		540EFE9C179F4AD2008F5D06 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				540EFEE417A07E4B008F5D06 /* Quartz.framework */,
+				540EFE9D179F4AD2008F5D06 /* AppKit.framework */,
+				540EFE9E179F4AD2008F5D06 /* CoreData.framework */,
+				540EFE9F179F4AD2008F5D06 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		540EFEA0179F4AD2008F5D06 /* ScaryBugsMac */ = {
+			isa = PBXGroup;
+			children = (
+				540EFEDD17A02D45008F5D06 /* Art */,
+				540EFED917A02D1D008F5D06 /* Helpers */,
+				540EFED517A02CFE008F5D06 /* Views */,
+				540EFEBD179F56CB008F5D06 /* Model */,
+				540EFEBC179F56AF008F5D06 /* GUI */,
+				540EFEA1179F4AD2008F5D06 /* Supporting Files */,
+			);
+			path = ScaryBugsMac;
+			sourceTree = "<group>";
+		};
+		540EFEA1179F4AD2008F5D06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				540EFEC4179F5A55008F5D06 /* Images */,
+				540EFEA2179F4AD2008F5D06 /* ScaryBugsMac-Info.plist */,
+				540EFEA3179F4AD2008F5D06 /* InfoPlist.strings */,
+				540EFEA6179F4AD2008F5D06 /* main.m */,
+				540EFEA8179F4AD2008F5D06 /* ScaryBugsMac-Prefix.pch */,
+				540EFEA9179F4AD3008F5D06 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		540EFEBC179F56AF008F5D06 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				540EFEAC179F4AD3008F5D06 /* AppDelegate.h */,
+				540EFEAD179F4AD3008F5D06 /* AppDelegate.m */,
+				540EFEB7179F4B83008F5D06 /* MasterViewController.h */,
+				540EFEB8179F4B83008F5D06 /* MasterViewController.m */,
+				540EFEB9179F4B83008F5D06 /* MasterViewController.xib */,
+				540EFEAF179F4AD3008F5D06 /* MainMenu.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		540EFEBD179F56CB008F5D06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				540EFEBE179F5774008F5D06 /* ScaryBugData.h */,
+				540EFEBF179F5774008F5D06 /* ScaryBugData.m */,
+				540EFEC1179F589C008F5D06 /* ScaryBugDoc.h */,
+				540EFEC2179F589C008F5D06 /* ScaryBugDoc.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		540EFEC4179F5A55008F5D06 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				540EFEC5179F5A75008F5D06 /* centipede.jpg */,
+				540EFEC6179F5A75008F5D06 /* centipedeThumb.jpg */,
+				540EFEC7179F5A75008F5D06 /* ladybug.jpg */,
+				540EFEC8179F5A75008F5D06 /* ladybugThumb.jpg */,
+				540EFEC9179F5A75008F5D06 /* potatoBug.jpg */,
+				540EFECA179F5A75008F5D06 /* potatoBugThumb.jpg */,
+				540EFECB179F5A75008F5D06 /* wolfSpider.jpg */,
+				540EFECC179F5A75008F5D06 /* wolfSpiderThumb.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		540EFED517A02CFE008F5D06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				540EFED617A02D0E008F5D06 /* EDStarRating.h */,
+				540EFED717A02D0E008F5D06 /* EDStarRating.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		540EFED917A02D1D008F5D06 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				540EFEDA17A02D2D008F5D06 /* NSImage+Extras.h */,
+				540EFEDB17A02D2D008F5D06 /* NSImage+Extras.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		540EFEDD17A02D45008F5D06 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				540EFEDE17A02D50008F5D06 /* shockedface2_empty.png */,
+				540EFEDF17A02D50008F5D06 /* shockedface2_full.png */,
+				540EFEE017A02D50008F5D06 /* shockedface2_half.png */,
+			);
+			name = Art;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		540EFE96179F4AD2008F5D06 /* ScaryBugsMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540EFEB4179F4AD3008F5D06 /* Build configuration list for PBXNativeTarget "ScaryBugsMac" */;
+			buildPhases = (
+				540EFE93179F4AD2008F5D06 /* Sources */,
+				540EFE94179F4AD2008F5D06 /* Frameworks */,
+				540EFE95179F4AD2008F5D06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScaryBugsMac;
+			productName = ScaryBugsMac;
+			productReference = 540EFE97179F4AD2008F5D06 /* ScaryBugsMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		540EFE8F179F4AD2008F5D06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = xyz;
+			};
+			buildConfigurationList = 540EFE92179F4AD2008F5D06 /* Build configuration list for PBXProject "ScaryBugsMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 540EFE8E179F4AD2008F5D06;
+			productRefGroup = 540EFE98179F4AD2008F5D06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				540EFE96179F4AD2008F5D06 /* ScaryBugsMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		540EFE95179F4AD2008F5D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540EFEA5179F4AD2008F5D06 /* InfoPlist.strings in Resources */,
+				540EFEAB179F4AD3008F5D06 /* Credits.rtf in Resources */,
+				540EFEB1179F4AD3008F5D06 /* MainMenu.xib in Resources */,
+				540EFEBB179F4B83008F5D06 /* MasterViewController.xib in Resources */,
+				540EFECD179F5A75008F5D06 /* centipede.jpg in Resources */,
+				540EFECE179F5A75008F5D06 /* centipedeThumb.jpg in Resources */,
+				540EFECF179F5A75008F5D06 /* ladybug.jpg in Resources */,
+				540EFED0179F5A75008F5D06 /* ladybugThumb.jpg in Resources */,
+				540EFED1179F5A75008F5D06 /* potatoBug.jpg in Resources */,
+				540EFED2179F5A75008F5D06 /* potatoBugThumb.jpg in Resources */,
+				540EFED3179F5A75008F5D06 /* wolfSpider.jpg in Resources */,
+				540EFED4179F5A75008F5D06 /* wolfSpiderThumb.jpg in Resources */,
+				540EFEE117A02D50008F5D06 /* shockedface2_empty.png in Resources */,
+				540EFEE217A02D50008F5D06 /* shockedface2_full.png in Resources */,
+				540EFEE317A02D50008F5D06 /* shockedface2_half.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		540EFE93179F4AD2008F5D06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540EFEA7179F4AD2008F5D06 /* main.m in Sources */,
+				540EFEAE179F4AD3008F5D06 /* AppDelegate.m in Sources */,
+				540EFEBA179F4B83008F5D06 /* MasterViewController.m in Sources */,
+				540EFEC0179F5774008F5D06 /* ScaryBugData.m in Sources */,
+				540EFEC3179F589C008F5D06 /* ScaryBugDoc.m in Sources */,
+				540EFED817A02D0E008F5D06 /* EDStarRating.m in Sources */,
+				540EFEDC17A02D2D008F5D06 /* NSImage+Extras.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		540EFEA3179F4AD2008F5D06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540EFEA4179F4AD2008F5D06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		540EFEA9179F4AD3008F5D06 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540EFEAA179F4AD3008F5D06 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		540EFEAF179F4AD3008F5D06 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540EFEB0179F4AD3008F5D06 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		540EFEB2179F4AD3008F5D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		540EFEB3179F4AD3008F5D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		540EFEB5179F4AD3008F5D06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScaryBugsMac/ScaryBugsMac-Prefix.pch";
+				INFOPLIST_FILE = "ScaryBugsMac/ScaryBugsMac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		540EFEB6179F4AD3008F5D06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScaryBugsMac/ScaryBugsMac-Prefix.pch";
+				INFOPLIST_FILE = "ScaryBugsMac/ScaryBugsMac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		540EFE92179F4AD2008F5D06 /* Build configuration list for PBXProject "ScaryBugsMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540EFEB2179F4AD3008F5D06 /* Debug */,
+				540EFEB3179F4AD3008F5D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540EFEB4179F4AD3008F5D06 /* Build configuration list for PBXNativeTarget "ScaryBugsMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540EFEB5179F4AD3008F5D06 /* Debug */,
+				540EFEB6179F4AD3008F5D06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 540EFE8F179F4AD2008F5D06 /* Project object */;
+}

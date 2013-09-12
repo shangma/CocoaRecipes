@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:TableViewDragDrop/TableViewDragDrop.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ViewBasedTableView/ViewBasedTableView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OutlineView/OutlineView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SplitView/SplitView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TableViewSorting/TableViewSorting.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ViewSwapping/ViewSwapping.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DragAndDrop/DragAndDrop.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Graphique/Graphique.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Expenses/Expenses.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ScaryBugsMac/ScaryBugsMac.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RaiseMan/RaiseMan.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:KVCFun/KVCFun.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TodoList/TodoList.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SpeechSynthesizer/SpeechSynthesizer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DrawingFun/DrawingFun.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CarLot/CarLot/CarLot.xcodeproj">
+   </FileRef>
+</Workspace>

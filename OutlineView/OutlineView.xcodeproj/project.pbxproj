@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		542A9DD117D4CFD500426A28 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542A9DD017D4CFD500426A28 /* Cocoa.framework */; };
+		542A9DDB17D4CFD600426A28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 542A9DD917D4CFD600426A28 /* InfoPlist.strings */; };
+		542A9DDD17D4CFD600426A28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A9DDC17D4CFD600426A28 /* main.m */; };
+		542A9DE117D4CFD600426A28 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 542A9DDF17D4CFD600426A28 /* Credits.rtf */; };
+		542A9DE417D4CFD600426A28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A9DE317D4CFD600426A28 /* AppDelegate.m */; };
+		542A9DE717D4CFD700426A28 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542A9DE517D4CFD700426A28 /* MainMenu.xib */; };
+		542A9DEF17D4E2FF00426A28 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A9DEE17D4E2FF00426A28 /* Person.m */; };
+		542A9DF217D4E4E000426A28 /* OutlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 542A9DF117D4E4E000426A28 /* OutlineViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		542A9DCD17D4CFD500426A28 /* OutlineView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutlineView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		542A9DD017D4CFD500426A28 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		542A9DD317D4CFD500426A28 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		542A9DD417D4CFD500426A28 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		542A9DD517D4CFD500426A28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		542A9DD817D4CFD600426A28 /* OutlineView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OutlineView-Info.plist"; sourceTree = "<group>"; };
+		542A9DDA17D4CFD600426A28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		542A9DDC17D4CFD600426A28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		542A9DDE17D4CFD600426A28 /* OutlineView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OutlineView-Prefix.pch"; sourceTree = "<group>"; };
+		542A9DE017D4CFD600426A28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		542A9DE217D4CFD600426A28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		542A9DE317D4CFD600426A28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		542A9DE617D4CFD700426A28 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		542A9DED17D4E2FF00426A28 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		542A9DEE17D4E2FF00426A28 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		542A9DF017D4E4E000426A28 /* OutlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlineViewController.h; sourceTree = "<group>"; };
+		542A9DF117D4E4E000426A28 /* OutlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlineViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		542A9DCA17D4CFD500426A28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542A9DD117D4CFD500426A28 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		542A9DC417D4CFD300426A28 = {
+			isa = PBXGroup;
+			children = (
+				542A9DD617D4CFD600426A28 /* OutlineView */,
+				542A9DCF17D4CFD500426A28 /* Frameworks */,
+				542A9DCE17D4CFD500426A28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		542A9DCE17D4CFD500426A28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				542A9DCD17D4CFD500426A28 /* OutlineView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		542A9DCF17D4CFD500426A28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				542A9DD017D4CFD500426A28 /* Cocoa.framework */,
+				542A9DD217D4CFD500426A28 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		542A9DD217D4CFD500426A28 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				542A9DD317D4CFD500426A28 /* AppKit.framework */,
+				542A9DD417D4CFD500426A28 /* CoreData.framework */,
+				542A9DD517D4CFD500426A28 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		542A9DD617D4CFD600426A28 /* OutlineView */ = {
+			isa = PBXGroup;
+			children = (
+				542A9DE217D4CFD600426A28 /* AppDelegate.h */,
+				542A9DE317D4CFD600426A28 /* AppDelegate.m */,
+				542A9DED17D4E2FF00426A28 /* Person.h */,
+				542A9DEE17D4E2FF00426A28 /* Person.m */,
+				542A9DF017D4E4E000426A28 /* OutlineViewController.h */,
+				542A9DF117D4E4E000426A28 /* OutlineViewController.m */,
+				542A9DE517D4CFD700426A28 /* MainMenu.xib */,
+				542A9DD717D4CFD600426A28 /* Supporting Files */,
+			);
+			path = OutlineView;
+			sourceTree = "<group>";
+		};
+		542A9DD717D4CFD600426A28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				542A9DD817D4CFD600426A28 /* OutlineView-Info.plist */,
+				542A9DD917D4CFD600426A28 /* InfoPlist.strings */,
+				542A9DDC17D4CFD600426A28 /* main.m */,
+				542A9DDE17D4CFD600426A28 /* OutlineView-Prefix.pch */,
+				542A9DDF17D4CFD600426A28 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		542A9DCC17D4CFD500426A28 /* OutlineView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542A9DEA17D4CFD700426A28 /* Build configuration list for PBXNativeTarget "OutlineView" */;
+			buildPhases = (
+				542A9DC917D4CFD500426A28 /* Sources */,
+				542A9DCA17D4CFD500426A28 /* Frameworks */,
+				542A9DCB17D4CFD500426A28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OutlineView;
+			productName = OutlineView;
+			productReference = 542A9DCD17D4CFD500426A28 /* OutlineView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		542A9DC517D4CFD300426A28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Sagar;
+			};
+			buildConfigurationList = 542A9DC817D4CFD300426A28 /* Build configuration list for PBXProject "OutlineView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 542A9DC417D4CFD300426A28;
+			productRefGroup = 542A9DCE17D4CFD500426A28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				542A9DCC17D4CFD500426A28 /* OutlineView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		542A9DCB17D4CFD500426A28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542A9DDB17D4CFD600426A28 /* InfoPlist.strings in Resources */,
+				542A9DE117D4CFD600426A28 /* Credits.rtf in Resources */,
+				542A9DE717D4CFD700426A28 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		542A9DC917D4CFD500426A28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542A9DDD17D4CFD600426A28 /* main.m in Sources */,
+				542A9DE417D4CFD600426A28 /* AppDelegate.m in Sources */,
+				542A9DEF17D4E2FF00426A28 /* Person.m in Sources */,
+				542A9DF217D4E4E000426A28 /* OutlineViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		542A9DD917D4CFD600426A28 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542A9DDA17D4CFD600426A28 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		542A9DDF17D4CFD600426A28 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542A9DE017D4CFD600426A28 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		542A9DE517D4CFD700426A28 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542A9DE617D4CFD700426A28 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		542A9DE817D4CFD700426A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		542A9DE917D4CFD700426A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		542A9DEB17D4CFD700426A28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OutlineView/OutlineView-Prefix.pch";
+				INFOPLIST_FILE = "OutlineView/OutlineView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		542A9DEC17D4CFD700426A28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OutlineView/OutlineView-Prefix.pch";
+				INFOPLIST_FILE = "OutlineView/OutlineView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		542A9DC817D4CFD300426A28 /* Build configuration list for PBXProject "OutlineView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542A9DE817D4CFD700426A28 /* Debug */,
+				542A9DE917D4CFD700426A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542A9DEA17D4CFD700426A28 /* Build configuration list for PBXNativeTarget "OutlineView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542A9DEB17D4CFD700426A28 /* Debug */,
+				542A9DEC17D4CFD700426A28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 542A9DC517D4CFD300426A28 /* Project object */;
+}
