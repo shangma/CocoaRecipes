@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class StretchView;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet StretchView *stretchView;
+
+- (IBAction)showOpenPanel:(id)sender;
 
 @end

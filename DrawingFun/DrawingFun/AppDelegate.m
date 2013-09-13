@@ -7,19 +7,28 @@
 //
 
 #import "AppDelegate.h"
+#import "StretchView.h"
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    //Create a button programmatically
-    NSView *superView = [[self window] contentView];
-    NSRect rect = NSMakeRect(100, 10, 250, 25);
-    NSButton *button = [[NSButton alloc] initWithFrame:rect];
-    [button setTitle:@"Click Me !"];
-    [superView addSubview:button];
+    
+}
 
+- (IBAction)showOpenPanel:(id)sender
+{
+    __block NSOpenPanel *panel = [NSOpenPanel openPanel];
+    [panel setAllowedFileTypes:[NSImage imageFileTypes]];
+    
+    [panel beginSheetModalForWindow:[_stretchView window] completionHandler:^(NSInteger result) {
+        if (result == NSOKButton) {
+            NSImage *image = [[NSImage alloc] initWithContentsOfURL:[panel URL]];
+            [_stretchView setImage:image];
+        }
+        panel = nil;
+    }];
 }
 
 @end
