@@ -1,3 +1,8 @@
+# User interface state #
+#######################
+*.xcuserstate
+.DS_Store
+*.xcuserdatad/
 # Xcode
 .DS_Store
 build/

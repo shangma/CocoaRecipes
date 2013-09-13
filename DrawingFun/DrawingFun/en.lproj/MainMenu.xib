@@ -1295,7 +1295,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {480, 405}}</string>
+				<string key="NSWindowRect">{{361, 228}, {480, 405}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">DrawingFun</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -3287,20 +3287,17 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">AppDelegate</string>
 					<string key="superclassName">NSObject</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="resetBugs:">id</string>
-						<string key="saveAction:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="resetBugs:">
-							<string key="name">resetBugs:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="saveAction:">
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">saveAction:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">saveAction:</string>
+						<object class="IBActionInfo" key="NS.object.0">
 							<string key="name">saveAction:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</dictionary>
+					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="arrayController">NSArrayController</string>
 						<string key="splitView">NSSplitView</string>
