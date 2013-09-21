@@ -7,6 +7,7 @@
 //
 
 #import "MoveView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation MoveView {
     NSImageView *_imageView;
@@ -31,11 +32,35 @@
         [_imageView setImageScaling:NSImageScaleAxesIndependently];
         
         [self addSubview:_imageView];
+        [_imageView setAnimations:@{@"frameOrigin": [self originAnimation],
+                                    @"frameSize": [self sizeAnimation]}];
         
         isAtStart = YES;
     }
     
     return self;
+}
+
+- (CABasicAnimation *) sizeAnimation
+{
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    CAMediaTimingFunction *timing = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    [animation setTimingFunction:timing];
+    [animation setDuration:2.5f];
+    [animation setFromValue:[NSValue valueWithSize:_startFrame.size]];
+    [animation setToValue:[NSValue valueWithSize:_endFrame.size]];
+    return animation;
+}
+
+- (CABasicAnimation *) originAnimation
+{
+    CABasicAnimation *originAnim = [CABasicAnimation animation];
+    [originAnim setDuration:4.0f];
+    NSPoint startPoint = _startFrame.origin;
+    NSPoint endPoint = _endFrame.origin;
+    [originAnim setFromValue:[NSValue valueWithPoint:startPoint]];
+    [originAnim setToValue:[NSValue valueWithPoint:endPoint]];
+    return originAnim;
 }
 
 - (void)drawRect:(NSRect)dirtyRect

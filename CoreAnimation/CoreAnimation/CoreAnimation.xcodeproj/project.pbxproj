@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54D768E417EE070200EBDCB5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D768E317EE070200EBDCB5 /* QuartzCore.framework */; };
 		54EA654E17ED11D300D999A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54EA654D17ED11D300D999A4 /* Cocoa.framework */; };
 		54EA655817ED11D300D999A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54EA655617ED11D300D999A4 /* InfoPlist.strings */; };
 		54EA655A17ED11D300D999A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EA655917ED11D300D999A4 /* main.m */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54D768E317EE070200EBDCB5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		54EA654A17ED11D300D999A4 /* CoreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54EA654D17ED11D300D999A4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		54EA655017ED11D300D999A4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D768E417EE070200EBDCB5 /* QuartzCore.framework in Frameworks */,
 				54EA654E17ED11D300D999A4 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +71,7 @@
 		54EA654C17ED11D300D999A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54D768E317EE070200EBDCB5 /* QuartzCore.framework */,
 				54EA654D17ED11D300D999A4 /* Cocoa.framework */,
 				54EA654F17ED11D300D999A4 /* Other Frameworks */,
 			);
@@ -313,6 +317,7 @@
 				54EA656917ED11D300D999A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
