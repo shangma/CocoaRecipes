@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TypingTutor/TypingTutor.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CoreAnimation/CoreAnimation/CoreAnimation.xcodeproj">
    </FileRef>
    <FileRef
