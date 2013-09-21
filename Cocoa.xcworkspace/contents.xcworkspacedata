@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CoreAnimation/CoreAnimation/CoreAnimation.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TableViewDragDrop/TableViewDragDrop.xcodeproj">
    </FileRef>
    <FileRef
