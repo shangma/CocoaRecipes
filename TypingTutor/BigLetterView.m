@@ -158,4 +158,47 @@
     }];
 }
 
+- (void) writeToPasteboard:(NSPasteboard *) pb
+{
+    [pb clearContents];
+    [pb writeObjects:@[string]];
+}
+
+- (BOOL) readFromPasteboard:(NSPasteboard *) pb
+{
+    NSArray *classes = @[[NSString class]];
+    NSArray *objects = [pb readObjectsForClasses:classes options:nil];
+    
+    if ([objects count] > 0) {
+        NSString *value = [objects objectAtIndex:0];
+        if ([value length] == 1) {
+            [self setString:value];
+            return YES;
+        }
+    }
+    
+    return NO;
+}
+
+
+- (IBAction)cut:(id)sender
+{
+    [self copy:sender];
+    [self setString:@""];
+}
+
+- (IBAction)copy:(id)sender
+{
+    NSPasteboard *pb = [NSPasteboard generalPasteboard];
+    [self writeToPasteboard:pb];
+}
+
+- (IBAction)paste:(id)sender
+{
+    NSPasteboard *pb = [NSPasteboard generalPasteboard];
+    if (![self readFromPasteboard:pb]) {
+        NSBeep();
+    }
+}
+
 @end

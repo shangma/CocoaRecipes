@@ -21,4 +21,8 @@
 - (void) prepareAttributes;
 - (IBAction)savePDF:(id)sender;
 
+- (IBAction)cut:(id)sender;
+- (IBAction)copy:(id)sender;
+- (IBAction)paste:(id)sender;
+
 @end
