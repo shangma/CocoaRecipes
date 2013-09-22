@@ -7,6 +7,7 @@
 //
 
 #import "BigLetterView.h"
+#import "NSString+FirstLetter.h"
 
 @implementation BigLetterView
 
@@ -171,10 +172,10 @@
     
     if ([objects count] > 0) {
         NSString *value = [objects objectAtIndex:0];
-        if ([value length] == 1) {
-            [self setString:value];
-            return YES;
-        }
+        
+        [self setString:[value firstLetter]];
+        return YES;
+
     }
     
     return NO;
