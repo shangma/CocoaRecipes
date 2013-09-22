@@ -19,6 +19,7 @@
     if (self) {
         
         NSLog(@"initializing view");
+        [self prepareAttributes];
         bgColor = [NSColor yellowColor];
         string = @"";
     }
@@ -41,6 +42,7 @@
 {
     string = _string;
     NSLog(@"The string is now %@", string);
+    [self setNeedsDisplay:YES];
 }
 
 - (NSString *) string
@@ -48,11 +50,23 @@
     return string;
 }
 
+- (void) drawStringCenteredIn:(NSRect) r
+{
+    NSSize strSize = [string sizeWithAttributes:attributes];
+    NSPoint strOrigin;
+    strOrigin.x = r.origin.x + (r.size.width - strSize.width)/2;
+    strOrigin.y = r.origin.y + (r.size.height - strSize.height)/2;
+    [string drawAtPoint:strOrigin withAttributes:attributes];
+    
+}
+
 - (void)drawRect:(NSRect)dirtyRect
 {
     NSRect bounds = [self bounds];
     [bgColor set];
     [NSBezierPath fillRect:bounds];
+    
+    [self drawStringCenteredIn:bounds];
     
     if ([[self window] firstResponder] == self && [NSGraphicsContext currentContextDrawingToScreen])
     {
@@ -117,5 +131,31 @@
     [self setString:@""];
 }
 
+- (void) prepareAttributes
+{
+    attributes = [NSMutableDictionary dictionary];
+    [attributes setObject:[NSFont userFontOfSize:75] forKey:NSFontAttributeName];
+    [attributes setObject:[NSColor redColor] forKey:NSForegroundColorAttributeName];
+}
+
+- (IBAction)savePDF:(id)sender
+{
+    __block NSSavePanel *panel = [NSSavePanel savePanel];
+    [panel setAllowedFileTypes:[NSArray arrayWithObject:@"pdf"]];
+    
+    [panel beginSheetModalForWindow:[self window] completionHandler:^(NSInteger result) {
+        if (result == NSOKButton) {
+            NSRect r = [self bounds];
+            NSData *data = [self dataWithPDFInsideRect:r];
+            NSError *error;
+            BOOL successful = [data writeToURL:[panel URL] options:0 error:&error];
+            if (!successful) {
+                NSAlert *a = [NSAlert alertWithError:error];
+                [a runModal];
+            }
+        }
+        panel = nil;
+    }];
+}
 
 @end

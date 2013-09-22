@@ -12,9 +12,13 @@
 {
     NSColor *bgColor;
     NSString *string;
+    NSMutableDictionary *attributes;
 }
 
 @property (nonatomic, strong) NSColor *bgColor;
 @property (nonatomic, copy) NSString *string;
+
+- (void) prepareAttributes;
+- (IBAction)savePDF:(id)sender;
 
 @end
