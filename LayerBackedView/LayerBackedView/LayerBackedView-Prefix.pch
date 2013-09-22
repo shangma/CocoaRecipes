@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LayerBackedView' target in the 'LayerBackedView' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
