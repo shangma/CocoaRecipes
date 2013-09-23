@@ -14,6 +14,7 @@
 {
     IBOutlet BigLetterView *inLetterView;
     IBOutlet BigLetterView *outLetterView;
+    IBOutlet NSWindow *speedSheet;
     
     NSArray *letters;
     int lastIndex;
@@ -25,6 +26,9 @@
 }
 
 - (IBAction)stopGo:(id)sender;
+- (IBAction)showSpeedSheet:(id)sender;
+- (IBAction)endSpeedSheet:(id)sender;
+
 - (void) updateElapsedTime;
 - (void) resetElapsedTime;
 - (void) showAnotherLetter;

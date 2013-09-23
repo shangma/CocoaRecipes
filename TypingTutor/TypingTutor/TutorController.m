@@ -82,4 +82,16 @@
     }
 }
 
+- (IBAction)showSpeedSheet:(id)sender
+{
+    [NSApp beginSheet:speedSheet modalForWindow:[inLetterView window] modalDelegate:nil didEndSelector:NULL contextInfo:NULL];
+}
+
+- (IBAction)endSpeedSheet:(id)sender
+{
+    [NSApp endSheet:speedSheet];
+    [speedSheet orderOut:sender];
+}
+
+
 @end
