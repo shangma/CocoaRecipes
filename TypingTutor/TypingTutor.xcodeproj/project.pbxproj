@@ -15,6 +15,7 @@
 		54D7696017EE1DBD00EBDCB5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D7695E17EE1DBD00EBDCB5 /* MainMenu.xib */; };
 		54D7696817EE1DD600EBDCB5 /* BigLetterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D7696717EE1DD600EBDCB5 /* BigLetterView.m */; };
 		54D769C417EF702900EBDCB5 /* NSString+FirstLetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D769C317EF702900EBDCB5 /* NSString+FirstLetter.m */; };
+		54D769C717EFBD4100EBDCB5 /* TutorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D769C617EFBD4100EBDCB5 /* TutorController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		54D7696717EE1DD600EBDCB5 /* BigLetterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BigLetterView.m; path = ../BigLetterView.m; sourceTree = "<group>"; };
 		54D769C217EF702900EBDCB5 /* NSString+FirstLetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FirstLetter.h"; sourceTree = "<group>"; };
 		54D769C317EF702900EBDCB5 /* NSString+FirstLetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FirstLetter.m"; sourceTree = "<group>"; };
+		54D769C517EFBD4100EBDCB5 /* TutorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorController.h; sourceTree = "<group>"; };
+		54D769C617EFBD4100EBDCB5 /* TutorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				54D7695C17EE1DBD00EBDCB5 /* TypingTutorAppDelegate.m */,
 				54D769C217EF702900EBDCB5 /* NSString+FirstLetter.h */,
 				54D769C317EF702900EBDCB5 /* NSString+FirstLetter.m */,
+				54D769C517EFBD4100EBDCB5 /* TutorController.h */,
+				54D769C617EFBD4100EBDCB5 /* TutorController.m */,
 				54D7695E17EE1DBD00EBDCB5 /* MainMenu.xib */,
 				54D7695017EE1DBD00EBDCB5 /* Supporting Files */,
 			);
@@ -181,6 +186,7 @@
 				54D7695D17EE1DBD00EBDCB5 /* TypingTutorAppDelegate.m in Sources */,
 				54D7696817EE1DD600EBDCB5 /* BigLetterView.m in Sources */,
 				54D769C417EF702900EBDCB5 /* NSString+FirstLetter.m in Sources */,
+				54D769C717EFBD4100EBDCB5 /* TutorController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
