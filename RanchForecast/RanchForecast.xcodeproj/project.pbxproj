@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54D769DB17F2590100EBDCB5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D769DA17F2590100EBDCB5 /* Cocoa.framework */; };
+		54D769E517F2590100EBDCB5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D769E317F2590100EBDCB5 /* InfoPlist.strings */; };
+		54D769E717F2590100EBDCB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D769E617F2590100EBDCB5 /* main.m */; };
+		54D769EB17F2590100EBDCB5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 54D769E917F2590100EBDCB5 /* Credits.rtf */; };
+		54D769EE17F2590100EBDCB5 /* RanchForecastAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D769ED17F2590100EBDCB5 /* RanchForecastAppDelegate.m */; };
+		54D769F117F2590200EBDCB5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D769EF17F2590200EBDCB5 /* MainMenu.xib */; };
+		54D769F917F2592300EBDCB5 /* ScheduledClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D769F817F2592300EBDCB5 /* ScheduledClass.m */; };
+		54D769FC17F25A6F00EBDCB5 /* ScheduleFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D769FB17F25A6F00EBDCB5 /* ScheduleFetcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		54D769D717F2590100EBDCB5 /* RanchForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RanchForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D769DA17F2590100EBDCB5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		54D769DD17F2590100EBDCB5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		54D769DE17F2590100EBDCB5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		54D769DF17F2590100EBDCB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54D769E217F2590100EBDCB5 /* RanchForecast-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RanchForecast-Info.plist"; sourceTree = "<group>"; };
+		54D769E417F2590100EBDCB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54D769E617F2590100EBDCB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54D769E817F2590100EBDCB5 /* RanchForecast-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RanchForecast-Prefix.pch"; sourceTree = "<group>"; };
+		54D769EA17F2590100EBDCB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		54D769EC17F2590100EBDCB5 /* RanchForecastAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RanchForecastAppDelegate.h; sourceTree = "<group>"; };
+		54D769ED17F2590100EBDCB5 /* RanchForecastAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RanchForecastAppDelegate.m; sourceTree = "<group>"; };
+		54D769F017F2590200EBDCB5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		54D769F717F2592300EBDCB5 /* ScheduledClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduledClass.h; sourceTree = "<group>"; };
+		54D769F817F2592300EBDCB5 /* ScheduledClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduledClass.m; sourceTree = "<group>"; };
+		54D769FA17F25A6F00EBDCB5 /* ScheduleFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleFetcher.h; sourceTree = "<group>"; };
+		54D769FB17F25A6F00EBDCB5 /* ScheduleFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleFetcher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54D769D417F2590100EBDCB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D769DB17F2590100EBDCB5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54D769CE17F2590100EBDCB5 = {
+			isa = PBXGroup;
+			children = (
+				54D769E017F2590100EBDCB5 /* RanchForecast */,
+				54D769D917F2590100EBDCB5 /* Frameworks */,
+				54D769D817F2590100EBDCB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54D769D817F2590100EBDCB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54D769D717F2590100EBDCB5 /* RanchForecast.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54D769D917F2590100EBDCB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54D769DA17F2590100EBDCB5 /* Cocoa.framework */,
+				54D769DC17F2590100EBDCB5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54D769DC17F2590100EBDCB5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54D769DD17F2590100EBDCB5 /* AppKit.framework */,
+				54D769DE17F2590100EBDCB5 /* CoreData.framework */,
+				54D769DF17F2590100EBDCB5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		54D769E017F2590100EBDCB5 /* RanchForecast */ = {
+			isa = PBXGroup;
+			children = (
+				54D769EC17F2590100EBDCB5 /* RanchForecastAppDelegate.h */,
+				54D769ED17F2590100EBDCB5 /* RanchForecastAppDelegate.m */,
+				54D769F717F2592300EBDCB5 /* ScheduledClass.h */,
+				54D769F817F2592300EBDCB5 /* ScheduledClass.m */,
+				54D769FA17F25A6F00EBDCB5 /* ScheduleFetcher.h */,
+				54D769FB17F25A6F00EBDCB5 /* ScheduleFetcher.m */,
+				54D769EF17F2590200EBDCB5 /* MainMenu.xib */,
+				54D769E117F2590100EBDCB5 /* Supporting Files */,
+			);
+			path = RanchForecast;
+			sourceTree = "<group>";
+		};
+		54D769E117F2590100EBDCB5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54D769E217F2590100EBDCB5 /* RanchForecast-Info.plist */,
+				54D769E317F2590100EBDCB5 /* InfoPlist.strings */,
+				54D769E617F2590100EBDCB5 /* main.m */,
+				54D769E817F2590100EBDCB5 /* RanchForecast-Prefix.pch */,
+				54D769E917F2590100EBDCB5 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54D769D617F2590100EBDCB5 /* RanchForecast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D769F417F2590200EBDCB5 /* Build configuration list for PBXNativeTarget "RanchForecast" */;
+			buildPhases = (
+				54D769D317F2590100EBDCB5 /* Sources */,
+				54D769D417F2590100EBDCB5 /* Frameworks */,
+				54D769D517F2590100EBDCB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RanchForecast;
+			productName = RanchForecast;
+			productReference = 54D769D717F2590100EBDCB5 /* RanchForecast.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54D769CF17F2590100EBDCB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RanchForecast;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = sagar;
+			};
+			buildConfigurationList = 54D769D217F2590100EBDCB5 /* Build configuration list for PBXProject "RanchForecast" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54D769CE17F2590100EBDCB5;
+			productRefGroup = 54D769D817F2590100EBDCB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54D769D617F2590100EBDCB5 /* RanchForecast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54D769D517F2590100EBDCB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D769E517F2590100EBDCB5 /* InfoPlist.strings in Resources */,
+				54D769EB17F2590100EBDCB5 /* Credits.rtf in Resources */,
+				54D769F117F2590200EBDCB5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54D769D317F2590100EBDCB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D769E717F2590100EBDCB5 /* main.m in Sources */,
+				54D769EE17F2590100EBDCB5 /* RanchForecastAppDelegate.m in Sources */,
+				54D769F917F2592300EBDCB5 /* ScheduledClass.m in Sources */,
+				54D769FC17F25A6F00EBDCB5 /* ScheduleFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54D769E317F2590100EBDCB5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D769E417F2590100EBDCB5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54D769E917F2590100EBDCB5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D769EA17F2590100EBDCB5 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		54D769EF17F2590200EBDCB5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D769F017F2590200EBDCB5 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54D769F217F2590200EBDCB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		54D769F317F2590200EBDCB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		54D769F517F2590200EBDCB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RanchForecast/RanchForecast-Prefix.pch";
+				INFOPLIST_FILE = "RanchForecast/RanchForecast-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54D769F617F2590200EBDCB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RanchForecast/RanchForecast-Prefix.pch";
+				INFOPLIST_FILE = "RanchForecast/RanchForecast-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54D769D217F2590100EBDCB5 /* Build configuration list for PBXProject "RanchForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D769F217F2590200EBDCB5 /* Debug */,
+				54D769F317F2590200EBDCB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D769F417F2590200EBDCB5 /* Build configuration list for PBXNativeTarget "RanchForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D769F517F2590200EBDCB5 /* Debug */,
+				54D769F617F2590200EBDCB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54D769CF17F2590100EBDCB5 /* Project object */;
+}

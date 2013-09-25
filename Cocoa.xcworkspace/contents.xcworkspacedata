@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:RanchForecast/RanchForecast.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:LayerBackedView/LayerBackedView.xcodeproj">
    </FileRef>
    <FileRef
