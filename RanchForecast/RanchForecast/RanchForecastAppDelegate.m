@@ -18,10 +18,21 @@
     [tableView setDoubleAction:@selector(openClass:)];
     
     ScheduleFetcher *fetcher = [[ScheduleFetcher alloc] init];
-    NSError *error = nil;
-    classes = [fetcher fetchClassesWithError:&error];
-    
-    [tableView reloadData];
+    [fetcher fetchClassesWithBlock:^(NSArray *theClasses, NSError *error) {
+        if (theClasses) {
+            classes = theClasses;
+            [tableView reloadData];
+        }
+        else
+        {
+            NSAlert *alert = [[NSAlert alloc] init];
+            [alert setAlertStyle:NSCriticalAlertStyle];
+            [alert setMessageText:@"Error loading schedule"];
+            [alert setInformativeText:[error localizedDescription]];
+            [alert addButtonWithTitle:@"OK"];
+            [alert beginSheetModalForWindow:self.window modalDelegate:nil didEndSelector:nil contextInfo:nil];
+        }
+    }];
 }
 
 - (void) openClass:(id) sender

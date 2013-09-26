@@ -22,36 +22,60 @@
     return self;
 }
 
-- (NSArray *)fetchClassesWithError:(NSError *__autoreleasing *)outError
+- (void) cleanUp
 {
-    BOOL success;
+    responseData = nil;
+    connection = nil;
+    resultBlock = nil;
+    
+}
+
+- (void)fetchClassesWithBlock:(ScheduleFetcherResultBlock)theBlock
+{
+    resultBlock = [theBlock copy];
     
     NSURL *xmlURL = [NSURL URLWithString:@"http://bignerdranch.com/xml/schedule"];
     
     NSURLRequest *req = [NSURLRequest requestWithURL:xmlURL cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30];
     
-    NSURLResponse *resp = nil;
+    connection = [[NSURLConnection alloc] initWithRequest:req delegate:self];
     
-    NSData *data = [NSURLConnection sendSynchronousRequest:req returningResponse:&resp error:outError];
-    
-    if (!data) {
-        return nil;
+    if (connection) {
+        responseData = [[NSMutableData alloc] init];
     }
-    
+}
+
+#pragma mark NSURLConnectionDelegate methods
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    [responseData appendData:data];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
     [classes removeAllObjects];
     
     NSXMLParser *parser;
-    parser = [[NSXMLParser alloc] initWithData:data];
+    parser = [[NSXMLParser alloc] initWithData:responseData];
     [parser setDelegate:self];
     
-    success = [parser parse];
+    BOOL success = [parser parse];
     if (!success) {
-        *outError = [parser parserError];
-        return nil;
+        resultBlock(nil, [parser parserError]);
     }
-    
-    NSArray *output = [classes copy];
-    return output;
+    else
+    {
+        NSArray *output = [classes copy];
+        resultBlock(output, nil);
+    }
+
+    [self cleanUp];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
+    resultBlock(nil, error);
+    [self cleanUp];
 }
 
 #pragma mark NSXMLParserDelegate methods

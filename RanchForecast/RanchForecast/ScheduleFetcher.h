@@ -8,14 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ScheduleFetcher : NSObject <NSXMLParserDelegate>
+typedef void (^ScheduleFetcherResultBlock)(NSArray *classes, NSError *error);
+
+@interface ScheduleFetcher : NSObject <NSXMLParserDelegate, NSURLConnectionDataDelegate>
 {
     NSMutableArray *classes;
     NSMutableString *currentString;
     NSMutableDictionary *currentFields;
     NSDateFormatter *dateFormatter;
+    
+    ScheduleFetcherResultBlock resultBlock;
+    NSMutableData *responseData;
+    NSURLConnection *connection;
 }
 
-- (NSArray *) fetchClassesWithError:(NSError **) outError;
+//- (NSArray *) fetchClassesWithError:(NSError **) outError;
+
+- (void) fetchClassesWithBlock:(ScheduleFetcherResultBlock) theBlock;
 
 @end
