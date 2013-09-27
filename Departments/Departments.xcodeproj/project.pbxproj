@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54D7BAC217F4F27C0052A445 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D7BAC117F4F27C0052A445 /* Cocoa.framework */; };
+		54D7BACC17F4F27C0052A445 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54D7BACA17F4F27C0052A445 /* InfoPlist.strings */; };
+		54D7BACE17F4F27C0052A445 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D7BACD17F4F27C0052A445 /* main.m */; };
+		54D7BAD217F4F27C0052A445 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 54D7BAD017F4F27C0052A445 /* Credits.rtf */; };
+		54D7BAD517F4F27C0052A445 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D7BAD417F4F27C0052A445 /* MyDocument.m */; };
+		54D7BAD817F4F27D0052A445 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D7BAD617F4F27D0052A445 /* MyDocument.xib */; };
+		54D7BADB17F4F27D0052A445 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D7BAD917F4F27D0052A445 /* MainMenu.xib */; };
+		54D7BADE17F4F27D0052A445 /* MyDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54D7BADC17F4F27D0052A445 /* MyDocument.xcdatamodeld */; };
+		54D7BAE617F4F4A10052A445 /* ManagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D7BAE517F4F4A10052A445 /* ManagingViewController.m */; };
+		54D7BAE917F4F58A0052A445 /* DepartmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D7BAE817F4F58A0052A445 /* DepartmentViewController.m */; };
+		54D7BAEB17F4F6390052A445 /* DepartmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D7BAEA17F4F6390052A445 /* DepartmentView.xib */; };
+		54D7BAEE17F4F72E0052A445 /* EmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D7BAED17F4F72D0052A445 /* EmployeeViewController.m */; };
+		54D7BAF017F4F7420052A445 /* EmployeeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D7BAEF17F4F7420052A445 /* EmployeeView.xib */; };
+		54D7BAF317F50A000052A445 /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D7BAF217F50A000052A445 /* Department.m */; };
+		54D7BAF617F50A010052A445 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D7BAF517F50A010052A445 /* Employee.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		54D7BABE17F4F27C0052A445 /* Departments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Departments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D7BAC117F4F27C0052A445 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		54D7BAC417F4F27C0052A445 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		54D7BAC517F4F27C0052A445 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		54D7BAC617F4F27C0052A445 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54D7BAC917F4F27C0052A445 /* Departments-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Departments-Info.plist"; sourceTree = "<group>"; };
+		54D7BACB17F4F27C0052A445 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		54D7BACD17F4F27C0052A445 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54D7BACF17F4F27C0052A445 /* Departments-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Departments-Prefix.pch"; sourceTree = "<group>"; };
+		54D7BAD117F4F27C0052A445 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		54D7BAD317F4F27C0052A445 /* MyDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		54D7BAD417F4F27C0052A445 /* MyDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		54D7BAD717F4F27D0052A445 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
+		54D7BADA17F4F27D0052A445 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		54D7BADD17F4F27D0052A445 /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
+		54D7BAE417F4F4A10052A445 /* ManagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagingViewController.h; sourceTree = "<group>"; };
+		54D7BAE517F4F4A10052A445 /* ManagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagingViewController.m; sourceTree = "<group>"; };
+		54D7BAE717F4F58A0052A445 /* DepartmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartmentViewController.h; sourceTree = "<group>"; };
+		54D7BAE817F4F58A0052A445 /* DepartmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentViewController.m; sourceTree = "<group>"; };
+		54D7BAEA17F4F6390052A445 /* DepartmentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DepartmentView.xib; sourceTree = "<group>"; };
+		54D7BAEC17F4F72D0052A445 /* EmployeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeViewController.h; sourceTree = "<group>"; };
+		54D7BAED17F4F72D0052A445 /* EmployeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeViewController.m; sourceTree = "<group>"; };
+		54D7BAEF17F4F7420052A445 /* EmployeeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmployeeView.xib; sourceTree = "<group>"; };
+		54D7BAF117F50A000052A445 /* Department.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		54D7BAF217F50A000052A445 /* Department.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		54D7BAF417F50A010052A445 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		54D7BAF517F50A010052A445 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54D7BABB17F4F27C0052A445 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D7BAC217F4F27C0052A445 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54D7BAB517F4F27B0052A445 = {
+			isa = PBXGroup;
+			children = (
+				54D7BAC717F4F27C0052A445 /* Departments */,
+				54D7BAC017F4F27C0052A445 /* Frameworks */,
+				54D7BABF17F4F27C0052A445 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54D7BABF17F4F27C0052A445 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54D7BABE17F4F27C0052A445 /* Departments.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54D7BAC017F4F27C0052A445 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54D7BAC117F4F27C0052A445 /* Cocoa.framework */,
+				54D7BAC317F4F27C0052A445 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54D7BAC317F4F27C0052A445 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54D7BAC417F4F27C0052A445 /* AppKit.framework */,
+				54D7BAC517F4F27C0052A445 /* CoreData.framework */,
+				54D7BAC617F4F27C0052A445 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		54D7BAC717F4F27C0052A445 /* Departments */ = {
+			isa = PBXGroup;
+			children = (
+				54D7BAD317F4F27C0052A445 /* MyDocument.h */,
+				54D7BAD417F4F27C0052A445 /* MyDocument.m */,
+				54D7BAE417F4F4A10052A445 /* ManagingViewController.h */,
+				54D7BAE517F4F4A10052A445 /* ManagingViewController.m */,
+				54D7BAEC17F4F72D0052A445 /* EmployeeViewController.h */,
+				54D7BAED17F4F72D0052A445 /* EmployeeViewController.m */,
+				54D7BAEF17F4F7420052A445 /* EmployeeView.xib */,
+				54D7BAE717F4F58A0052A445 /* DepartmentViewController.h */,
+				54D7BAE817F4F58A0052A445 /* DepartmentViewController.m */,
+				54D7BAEA17F4F6390052A445 /* DepartmentView.xib */,
+				54D7BAD617F4F27D0052A445 /* MyDocument.xib */,
+				54D7BAD917F4F27D0052A445 /* MainMenu.xib */,
+				54D7BADC17F4F27D0052A445 /* MyDocument.xcdatamodeld */,
+				54D7BAF417F50A010052A445 /* Employee.h */,
+				54D7BAF517F50A010052A445 /* Employee.m */,
+				54D7BAF117F50A000052A445 /* Department.h */,
+				54D7BAF217F50A000052A445 /* Department.m */,
+				54D7BAC817F4F27C0052A445 /* Supporting Files */,
+			);
+			path = Departments;
+			sourceTree = "<group>";
+		};
+		54D7BAC817F4F27C0052A445 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54D7BAC917F4F27C0052A445 /* Departments-Info.plist */,
+				54D7BACA17F4F27C0052A445 /* InfoPlist.strings */,
+				54D7BACD17F4F27C0052A445 /* main.m */,
+				54D7BACF17F4F27C0052A445 /* Departments-Prefix.pch */,
+				54D7BAD017F4F27C0052A445 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54D7BABD17F4F27C0052A445 /* Departments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D7BAE117F4F27D0052A445 /* Build configuration list for PBXNativeTarget "Departments" */;
+			buildPhases = (
+				54D7BABA17F4F27C0052A445 /* Sources */,
+				54D7BABB17F4F27C0052A445 /* Frameworks */,
+				54D7BABC17F4F27C0052A445 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Departments;
+			productName = Departments;
+			productReference = 54D7BABE17F4F27C0052A445 /* Departments.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54D7BAB617F4F27B0052A445 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = My;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = sagar;
+			};
+			buildConfigurationList = 54D7BAB917F4F27B0052A445 /* Build configuration list for PBXProject "Departments" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54D7BAB517F4F27B0052A445;
+			productRefGroup = 54D7BABF17F4F27C0052A445 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54D7BABD17F4F27C0052A445 /* Departments */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54D7BABC17F4F27C0052A445 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D7BACC17F4F27C0052A445 /* InfoPlist.strings in Resources */,
+				54D7BAD217F4F27C0052A445 /* Credits.rtf in Resources */,
+				54D7BAD817F4F27D0052A445 /* MyDocument.xib in Resources */,
+				54D7BADB17F4F27D0052A445 /* MainMenu.xib in Resources */,
+				54D7BAEB17F4F6390052A445 /* DepartmentView.xib in Resources */,
+				54D7BAF017F4F7420052A445 /* EmployeeView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54D7BABA17F4F27C0052A445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D7BACE17F4F27C0052A445 /* main.m in Sources */,
+				54D7BAD517F4F27C0052A445 /* MyDocument.m in Sources */,
+				54D7BADE17F4F27D0052A445 /* MyDocument.xcdatamodeld in Sources */,
+				54D7BAE617F4F4A10052A445 /* ManagingViewController.m in Sources */,
+				54D7BAE917F4F58A0052A445 /* DepartmentViewController.m in Sources */,
+				54D7BAEE17F4F72E0052A445 /* EmployeeViewController.m in Sources */,
+				54D7BAF317F50A000052A445 /* Department.m in Sources */,
+				54D7BAF617F50A010052A445 /* Employee.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54D7BACA17F4F27C0052A445 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D7BACB17F4F27C0052A445 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		54D7BAD017F4F27C0052A445 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D7BAD117F4F27C0052A445 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		54D7BAD617F4F27D0052A445 /* MyDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D7BAD717F4F27D0052A445 /* en */,
+			);
+			name = MyDocument.xib;
+			sourceTree = "<group>";
+		};
+		54D7BAD917F4F27D0052A445 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D7BADA17F4F27D0052A445 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54D7BADF17F4F27D0052A445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		54D7BAE017F4F27D0052A445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		54D7BAE217F4F27D0052A445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Departments/Departments-Prefix.pch";
+				INFOPLIST_FILE = "Departments/Departments-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		54D7BAE317F4F27D0052A445 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Departments/Departments-Prefix.pch";
+				INFOPLIST_FILE = "Departments/Departments-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54D7BAB917F4F27B0052A445 /* Build configuration list for PBXProject "Departments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D7BADF17F4F27D0052A445 /* Debug */,
+				54D7BAE017F4F27D0052A445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D7BAE117F4F27D0052A445 /* Build configuration list for PBXNativeTarget "Departments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D7BAE217F4F27D0052A445 /* Debug */,
+				54D7BAE317F4F27D0052A445 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		54D7BADC17F4F27D0052A445 /* MyDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				54D7BADD17F4F27D0052A445 /* MyDocument.xcdatamodel */,
+			);
+			currentVersion = 54D7BADD17F4F27D0052A445 /* MyDocument.xcdatamodel */;
+			path = MyDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54D7BAB617F4F27B0052A445 /* Project object */;
+}
