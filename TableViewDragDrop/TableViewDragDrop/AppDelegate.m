@@ -17,7 +17,7 @@
 {
     _tableContents = [[NSMutableArray alloc] init];
     //NSString *path = @"/Library/Application Support/Apple/iChat Icons/Flags";
-    NSString *path = @"/Library/Application Support/Apple/iChat Icons/";
+    NSString *path = @"/Library/Desktop Pictures/";
     
     NSURL *url = [[NSURL alloc] initFileURLWithPath:path];
     
@@ -178,6 +178,28 @@
     }
     
 }
+
+- (BOOL)tableView:(NSTableView *)tableView acceptDrop:(id<NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation
+{
+    [self performInsertWithDragInfo:info row:row];
+    return YES;
+}
+
+- (void) performInsertWithDragInfo:(id<NSDraggingInfo>) info row:(NSInteger) row
+{
+    NSArray *classes = @[[DesktopEntity class]];
+    __block NSInteger insertionIndex = row;
+    [info enumerateDraggingItemsWithOptions:0 forView:_tableView classes:classes searchOptions:nil usingBlock:^(NSDraggingItem *draggingItem, NSInteger idx, BOOL *stop) {
+        DesktopEntity *entity = draggingItem.item;
+        [_tableContents insertObject:entity atIndex:insertionIndex];
+        [_tableView insertRowsAtIndexes:[NSIndexSet indexSetWithIndex:insertionIndex] withAnimation:NSTableViewAnimationEffectGap];
+        draggingItem.draggingFrame = [_tableView frameOfCellAtColumn:0 row:insertionIndex];
+        insertionIndex++;
+    }];
+    
+}
+
+#pragma mark NSTableView delegate
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
