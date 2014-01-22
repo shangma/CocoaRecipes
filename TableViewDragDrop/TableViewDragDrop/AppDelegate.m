@@ -11,6 +11,8 @@
 
 @implementation AppDelegate {
     NSMutableArray *_tableContents;
+    NSRange _objectRange;
+    NSArray *_currentDraggedObjects;
 }
 
 - (void) applicationDidFinishLaunching:(NSNotification *)notification
@@ -123,12 +125,35 @@
                                        options:[self pasteboardReadingOptions]];
 }
 
+- (void)tableView:(NSTableView *)tableView draggingSession:(NSDraggingSession *)session willBeginAtPoint:(NSPoint)screenPoint forRowIndexes:(NSIndexSet *)rowIndexes
+{
+    NSUInteger length = ([rowIndexes lastIndex] + 1) - [rowIndexes firstIndex];
+    _objectRange = NSMakeRange([rowIndexes firstIndex], length);
+    _currentDraggedObjects = [_tableContents objectsAtIndexes:rowIndexes];
+}
+
+- (void)tableView:(NSTableView *)tableView draggingSession:(NSDraggingSession *)session endedAtPoint:(NSPoint)screenPoint operation:(NSDragOperation)operation
+{
+    _objectRange = NSMakeRange(0, 0);
+    _currentDraggedObjects = nil;
+}
+
 - (NSDragOperation)tableView:(NSTableView *)tableView validateDrop:(id<NSDraggingInfo>)info proposedRow:(NSInteger)row proposedDropOperation:(NSTableViewDropOperation)dropOperation
 {
-    if (dropOperation == NSTableViewDropAbove) {
+    if (dropOperation == NSTableViewDropAbove && (_objectRange.location > row || _objectRange.location + _objectRange.length < row))
+    {
         if ([info draggingSource] == tableView)
         {
             //Re-order happening within tableview...
+            if ([info draggingSourceOperationMask] == NSDragOperationCopy) {
+                [info setAnimatesToDestination:YES];
+                return NSDragOperationCopy;
+            }
+            else
+            {
+                //Move operation
+                return NSDragOperationMove;
+            }
         }
         else
         {
@@ -181,8 +206,34 @@
 
 - (BOOL)tableView:(NSTableView *)tableView acceptDrop:(id<NSDraggingInfo>)info row:(NSInteger)row dropOperation:(NSTableViewDropOperation)dropOperation
 {
-    [self performInsertWithDragInfo:info row:row];
+    if (_currentDraggedObjects == nil || [info draggingSourceOperationMask] == NSDragOperationCopy)
+    {
+        [self performInsertWithDragInfo:info row:row];
+    }
+    else
+    {
+        [_tableView beginUpdates];
+        [self performDragReorderWithDragInfo:info row:row];
+        [_tableView endUpdates];
+    }
+    
     return YES;
+}
+
+- (void) performDragReorderWithDragInfo:(id<NSDraggingInfo>)info row:(NSInteger) row
+{
+    NSArray *classes = @[[DesktopEntity class]];
+    [info enumerateDraggingItemsWithOptions:0 forView:_tableView classes:classes searchOptions:0 usingBlock:^(NSDraggingItem *draggingItem, NSInteger idx, BOOL *stop) {
+        NSInteger newIndex = row+idx;
+        DesktopEntity *entity = _currentDraggedObjects[idx];
+        NSInteger oldIndex = [_tableContents indexOfObject:entity];
+        if (oldIndex < newIndex) {
+            newIndex = newIndex - (idx+1);
+        }
+        [_tableContents removeObjectAtIndex:oldIndex];
+        [_tableContents insertObject:entity atIndex:newIndex];
+        [_tableView moveRowAtIndex:oldIndex toIndex:newIndex];
+    }];
 }
 
 - (void) performInsertWithDragInfo:(id<NSDraggingInfo>) info row:(NSInteger) row
@@ -199,7 +250,6 @@
     
 }
 
-#pragma mark NSTableView delegate
 
 - (NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
